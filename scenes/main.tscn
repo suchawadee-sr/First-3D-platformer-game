@@ -42,7 +42,7 @@ modulate = Color(0.945098, 0.87451, 0.823529, 1)
 outline_modulate = Color(0.749711, 0.341226, 0.238717, 1)
 text = "HOW TO PLAY / วิธีเล่น
 W A S D - เดิน 
-Arrow Keys (↑ ↓ ← →) - ควบคุมมุมกล้อง
+Arrow Keys - ควบคุมมุมกล้อง
 Spacebar - กระโดด"
 font = ExtResource("15_jkv2x")
 font_size = 70
