@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0yvu0gmxgvw3"]
+
+[ext_resource type="PackedScene" uid="uid://vkfi7ks1mkx" path="res://models/Bread Slice.glb" id="1_0ap44"]
+[ext_resource type="Script" uid="uid://f707lqlc0wtj" path="res://objects/bread_slice.gd" id="2_fvgso"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0ap44"]
+size = Vector3(0.3299408, 0.5077286, 0.09753418)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fvgso"]
+size = Vector3(1.0947266, 0.022583008, 1.0498047)
+
+[node name="Bread Slice" instance=ExtResource("1_0ap44")]
+script = ExtResource("2_fvgso")
+
+[node name="RootNode" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="bread_slice" parent="RootNode" index="0"]
+transform = Transform3D(100, 0, 0, 0, 1.1920929e-05, 100, 0, -100, 1.1920929e-05, 0, 0, 0.23705226)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode" index="1"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/StaticBody3D" index="0"]
+transform = Transform3D(1.2790222, 0, 0, 0, 1, 0, 0, 0, 1, 0.00054549053, 0.015398845, -0.0015258896)
+shape = SubResource("BoxShape3D_0ap44")
+
+[node name="Area3D" type="Area3D" parent="RootNode" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.003956914, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Area3D" index="0"]
+transform = Transform3D(0.37390006, 0, 0, 0, 0.33142456, 0, 0, 0, 0.46946028, -0.00091284234, 0.049969215, -0.011690661)
+shape = SubResource("BoxShape3D_fvgso")
+
+[connection signal="body_entered" from="RootNode/Area3D" to="." method="_on_area_3d_body_entered"]

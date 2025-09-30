@@ -9,7 +9,7 @@ extends Node3D
 @export var zoom_speed = 10
 
 @export_group("Rotation")
-@export var rotation_speed = 120
+@export var rotation_speed = 80
 
 var camera_rotation:Vector3
 var zoom = 10

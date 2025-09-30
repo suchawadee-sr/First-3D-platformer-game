@@ -2,26 +2,28 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://flhrafee7gxp"
-path.s3tc="res://.godot/imported/Pie Cherry_tiny_treats_texture_1.png-a3cd916d0af294d3352f996858c2907c.s3tc.ctex"
+uid="uid://c0vjbkwao4c1e"
+path.s3tc="res://.godot/imported/Panda_Sushi_Atlas.png-9d3e65190361b6bf03fc9018340e1bf5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "77713f85c2561bd81d71750081e5c904"
+"md5": "deb4136320a09128a91dae0c35c66c97"
 }
 
 [deps]
 
-source_file="res://models/Pie Cherry_tiny_treats_texture_1.png"
-dest_files=["res://.godot/imported/Pie Cherry_tiny_treats_texture_1.png-a3cd916d0af294d3352f996858c2907c.s3tc.ctex"]
+source_file="res://models/Textures/Panda_Sushi_Atlas.png"
+dest_files=["res://.godot/imported/Panda_Sushi_Atlas.png-9d3e65190361b6bf03fc9018340e1bf5.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -29,6 +31,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

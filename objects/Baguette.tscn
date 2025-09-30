@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnwqg53vyp2au"]
+
+[ext_resource type="PackedScene" uid="uid://xi0i2wodw8nw" path="res://models/Baguette.glb" id="1_cs67b"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cs67b"]
+radius = 0.17919922
+height = 1.1877899
+
+[node name="Baguette" instance=ExtResource("1_cs67b")]
+
+[node name="RootNode" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode" index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 0.76125425, 0, -1, -3.327548e-08, 0, 0.1370565, 0)
+shape = SubResource("CapsuleShape3D_cs67b")
